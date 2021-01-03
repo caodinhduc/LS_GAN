@@ -1,4 +1,4 @@
-This repo implements LS GAN with training dataset is LSUN dataset(church)
+This repo implements LS GAN with training dataset is LSUN dataset(church outdoor)
 
 it contains:
 1. data_loader.py supports pytorch data loader
@@ -9,3 +9,14 @@ it contains:
 Finally, in inference.py, you are able to run generator to create fake images, please check carefully several paths.
 I provided temporary checkpoint in folder "checkpoint/", but note that the training process has been continuous and I will update the latest checkpoint via Google drive link:
 https://drive.google.com/file/d/1u-dRAGMxmb3W5039wdCLs0ssF85F8n2w/view?usp=sharing
+
+Model architectures:
+<div align="center">
+  <img src="images/generator.png" width="800px" />
+  <p>Generator</p>
+</div>
+
+<div align="center">
+  <img src="images/discriminator.png" width="800px" />
+  <p>Discriminator</p>
+</div>
