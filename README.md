@@ -7,8 +7,7 @@ it contains:
 4. utils.py provides necessary libraries
 
 Finally, in inference.py, you are able to run generator to create fake images, please check carefully several paths.
-I provided temporary checkpoint in folder "checkpoint/", but note that the training process has been continuous and I will update the latest checkpoint via Google drive link:
-https://drive.google.com/file/d/1u-dRAGMxmb3W5039wdCLs0ssF85F8n2w/view?usp=sharing
+I provided temporary checkpoint in folder "checkpoint/"
 
 Model architectures:
 <div align="center">
@@ -19,4 +18,16 @@ Model architectures:
 <div align="center">
   <img src="images/discriminator.png" width="800px" />
   <p>Discriminator</p>
+</div>
+
+Several generations:
+
+<div align="center">
+  <img src="images/fake1.png" width="400px" />
+  <p>Fake images example</p>
+</div>
+
+<div align="center">
+  <img src="images/fake2.png" width="400px" />
+  <p>Fake images example</p>
 </div>

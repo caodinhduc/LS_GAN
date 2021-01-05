@@ -17,7 +17,7 @@ if __name__ == '__main__':
     parser.add_argument("--batch_size", type=int, default=64, help="size of the batches")
     parser.add_argument("--lr", type=float, default=0.0002, help="adam: learning rate")
     parser.add_argument("--n_cpu", type=int, default=8, help="number of cpu threads to use during batch generation")
-    parser.add_argument("--latent_dim", type=int, default=100, help="dimensionality of the latent space")
+    parser.add_argument("--latent_dim", type=int, default=128, help="dimensionality of the latent space")
     parser.add_argument("--img_size", type=int, default=64, help="size of each image dimension")
     parser.add_argument("--channels", type=int, default=3, help="number of image channels, 3 for RGB image")
     parser.add_argument("--sample_interval", type=int, default=1000, help="number of image channels")
@@ -36,4 +36,4 @@ if __name__ == '__main__':
     generator.load_state_dict(checkpoint_generator['generator'])
     
     gen_imgs = generator(z)
-    save_image(gen_imgs.data[:25], "fake1.png", nrow=5, normalize=True)
+    save_image(gen_imgs.data[:25], "images/fake2.png", nrow=5, normalize=True)
